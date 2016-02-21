@@ -1,8 +1,22 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="action.js"></script>
   <title>Cover Page</title>
   <link href="style.css" rel="stylesheet" type="text/css">
+  <ul class=icon>
+  <span id="vName">
+  <script>readCookie('myCookie')</script>
+  </span>
+  <form name="frmLogin">
+  Please Log In:<br> <input type="text" name="fname" size="20" placeholder="Name">
+  <input type="email" name="email" placeholder="email address" /><br>
+  <input type="button" Value="Log in" onClick="createCookie('myCookie',frmLogin.fname.value)">
+  <input type="reset" value="Cancel" />
+  </form>
+  </ul>
   <script>
 function toggleCP(){
 var cp = document.getElementById("cp");
@@ -39,10 +53,7 @@ cp.style.right = "0px";
   </div>    
   <div class="tech">
     <header>
-      <h1 id="welcome"></h1>
-      <input id="userInput" type="text" placeholder="enter name">
-      <input onclick="userName()" type="submit" value="Submit">
-      
+
     </header>
   </div>
 
@@ -63,14 +74,20 @@ Best Regards,<br><br>
 Marques Butilla
 </p>
   </div>
+    <ul class="nav">
+  <li><a href="Cover_Page.html">Cover Page</a></li>
+    <li><a href="Letter_of_Reference.html">Letter of Reference</a></li>
+    <li><a href="Resumes.html">Resumes</a></li>
+    <li><a href="Work_Samples.html">Work Samples</a></li>
+   <li><a href="yu.html">Year Up</a></li>
+    <li><a href="qa.html">Quality Assurance</a></li>
+    <li><a href="cp.html">Corporate Partners</a></li>
+    <li><a href="li.html">Learning and Development</a></li>
+    <li><a href="testing.html">Testing</a></li>
+  </ul> 
 </body>
-<script>
-  function userName() {
-      var name = document.getElementById("userInput").value;
-      document.getElementById("welcome").innerHTML ="Welcome " + name + ", to my profile";
-      color: red; 
-    }
-</script>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br>
 <footer> ©2015 Dunkino Production. All Rights Reserved</footer>
 
 </html>

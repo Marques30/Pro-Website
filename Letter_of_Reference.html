@@ -1,8 +1,22 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="action.js"></script>
   <title>Reference</title>
   <link href="style.css" rel="stylesheet" type="text/css">
+  <ul class=icon>
+  <span id="vName">
+  <script>readCookie('myCookie')</script>
+  </span>
+  <form name="frmLogin">
+  Please Log In:<br> <input type="text" name="fname" size="20" placeholder="Name">
+  <input type="email" name="email" placeholder="email address" /><br>
+  <input type="button" Value="Log in" onClick="createCookie('myCookie',frmLogin.fname.value)">
+  <input type="reset" value="Cancel" />
+  </form>
+  </ul>
   <script>
 function toggleCP(){
 var cp = document.getElementById("cp");
@@ -39,16 +53,13 @@ cp.style.right = "0px";
   </div>    
   <div class="tech">
     <header>
-      <h1 id="welcome"></h1>
-      <input id="userInput" type="text" placeholder="enter name">
-      <input onclick="userName()" type="submit" value="Submit">
-      
+
     </header>
   </div>
 
   </ul>
 </head>
-  <div style="width: 50%; height: 650px; text-align:left; background-color: green; float:left;">
+  <div style="width: 47%; height: 650px; text-align:left; background:rgba(0, 0, 0, 0.5); border-radius: 25px; float:left;">
   <h2 style="text-align:center;">Feuy Saeyang</h2>
     <p>December 9, 2015<br><br>
 
@@ -68,7 +79,7 @@ Sincerely,<br><br>
 
 Feuy Saeyang</p>
   </div>
-    <div style="width: 50%; height: 650px; text-align:left; background-color: green; float:right; padding-right:25px;">
+    <div style="width: 47%; height: 650px; text-align:left; background:rgba(0, 0, 0, 0.5); border-radius: 25px; float:right; padding-right:25px;">
 <h2 style="text-align:center;">Mark Bihag</h2>
     <p>
       It is a great pleasure to write a letter of recommendation for Marques Butilla. I have known him since the start of Year Up class 15.<br><br>
@@ -86,7 +97,7 @@ Sincerely,<br><br>
 Mark Bihag
     </p>
     </div>
-  <div style="width: 50%; height: 375px; background-color: green; text-align:left; float:left;">
+  <div style="width: 47%; height: 375px; background:rgba(0, 0, 0, 0.5); border-radius: 25px; text-align:left; float:left;">
   <h2 style="text-align:center;">Jonthan Hamot</h2>
     <p>I have gotten the chance to get to know Marques these past couple of months and he's someone I can rely heavily on. He is always sacrificing his time to help others succeed in this program. He always gets his work done before everyone with excellent quality. I see Marques as someone who is highly respected and very knowledgeable. His proficiency in his web development skills and also his ability to take on any task that is given to him will take him a long way.<br><br>
 
@@ -94,7 +105,7 @@ Marques is a great team player and works well in group projects. He has the abil
 
 Jonathan Hamot </p>
   </div>
-  <div style="width: 50%; height: 550px; text-align:left; background-color: green; float:right; padding-right:25px;">
+  <div style="width: 47%; height: 550px; text-align:left; background:rgba(0, 0, 0, 0.5); border-radius: 25px; float:right; padding-right:25px;">
 <h2 style="text-align:center;">Eduardo Cuevas</h2>
     <p>Hello, I am Eduardo Cuevas from Year Up. But enough about me, I want to tell you why Marques is the best candidate for any position he will be headed to, and why you need him on your team. Have you ever had a time where the day drags on forever? Or needed to have someone to collaborate effectively and get the job done. Then Marques is your go-to guy!<br><br>
 
@@ -109,13 +120,21 @@ From,<br><br>
 Eduardo Cuevas
 </p>
     </div>
+  <ul class="nav">
+  <li><a href="Cover_Page.html">Cover Page</a></li>
+    <li><a href="Letter_of_Reference.html">Letter of Reference</a></li>
+    <li><a href="Resumes.html">Resumes</a></li>
+    <li><a href="Work_Samples.html">Work Samples</a></li>
+   <li><a href="yu.html">Year Up</a></li>
+    <li><a href="qa.html">Quality Assurance</a></li>
+    <li><a href="cp.html">Corporate Partners</a></li>
+    <li><a href="li.html">Learning and Development</a></li>
+    <li><a href="testing.html">Testing</a></li>
+  </ul> 
 </body>
-<script>
-  function userName() {
-      var name = document.getElementById("userInput").value;
-      document.getElementById("welcome").innerHTML ="Welcome " + name + ", to my Letters of Reference";
-    }
-</script>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <footer> ©2015 Dunkino Production. All Rights Reserved</footer>
 
 </html>
