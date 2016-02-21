@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="action.js"></script>
+  <title>Testing</title>
+    <ul class=icon>
+      <li><a href="https://yearup.org"><img src="images/YP.gif" style="width:150px"></a></li>
+      <li style="padding-left:750px;"><a href="https://www.facebook.com/yearup"><img src="images/SB.png" style="width:75px;"></a></li>
+      <li><a href="https://twitter.com/yearup"><img src="images/ti.png" style="width:75px"></a></li>
+      <li><a href="https://www.youtube.com/user/YearUpInc"><img src="images/yi.png" style="width:75px"></a></li>
+  </ul>
+  <span id="vName">
+  <script>readCookie('myCookie')</script>
+  </span>
+  <form name="frmLogin">
+  Please Log In:<br> <input type="text" name="fname" size="20" placeholder="Name">
+  <input type="email" name="email" placeholder="email address" /><br>
+  <input type="button" Value="Log in" onClick="createCookie('myCookie',frmLogin.fname.value)">
+  <input type="reset" value="Cancel" />
+  </form>
+  <script>
+function toggleCP(){
+var cp = document.getElementById("cp");
+cp.style.height = window.innerHeight - 60+"px";
+if(cp.style.right == "0px"){
+cp.style.right = "-260px";
+} else {
+cp.style.right = "0px";
+}
+}
+</script>
+</head>
+<body>
+  <header>
+  <div id="cpBtn" onclick="toggleCP()">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<div id="cp">
+<center><h2>Navigation</h2></center>
+  <ul>
+        <li><a href="Cover_Page.html">Cover Page</a></li>
+        <li><a href="Letter_of_Reference.html">Letter of Reference</a></li>
+        <li><a href="Resumes.html">Resumes</a></li>
+        <li><a href="Work_Samples.html">Work Samples</a></li>
+        <li><a href="index.html"><img src="images\monkey.gif"></a></li>
+        <li><a href="yu.html">Year Up</a></li>
+        <li><a href="qa.html">Quality Assurance</a></li>
+        <li><a href="cp.html">Corporate Partners</a></li>
+        <li><a href="li.html">Learning and Development</a></li>
+        <li><a href="testing.html">Testing</a></li>
+      </ul>
+  </div>    
+  <div class="tech">
+    <header>
+      <h1 id="welcome"></h1>
+      <input id="userInput" type="text" placeholder="enter name">
+      <input onclick="userName()" type="submit" value="Submit">
+      
+    </header>
+  </div>
+
+  </ul>
+</head>
+<h3>Testing</h3>
+  <div style="float:left; text-align:left; width:450px; background: rgba(0, 0, 0, 0.5); border: solid; border-radius: 25px;">
+  <h4>Software</h4>
+    <p> Software testing is an investigation conducted to provide stakeholders with information about the quality of the product or service under test. Software testing can also provide an objective, independent view of the software to allow the business to appreciate and understand the risks of software implementation</p>
+    <img src="images/st.png">
+  </div>
+  <div style="float:right; text-align:left; width:450px; background: rgba(0, 0, 0, 0.5); border: solid; border-radius: 25px;">
+  <h4>Overall</h4>
+  <p> In testing everything is broken into categories and methods. One of the main ways are test-to-pass where you test parts you think will pass. And test-to-fail where test parts past their limit trying to break it. There is also a method called black box and white box testing. In black box you are testing without blueprint or what I call customer perspective testing all elements of the product. While white box testing is testing knowing the program code or having a blueprints of what is in the product, so you are testing it knowing how it should respond and act. However, there are also different ways to test such as dynamic and static. In static you are testing while the product is not running, while in dynamic you are testing while it runs. To make it easier just think of a car there are parts you can change while it's off (static) and to see it perform you have to drive it (dynamic).</p>
+  </div>
+   <br><br><br><br>
+<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
+<br><br><br><br>
+  <ul class="nav">
+   <li><a href="yu.html">Year Up</a></li>
+    <li><a href="qa.html">Quality Assurance</a></li>
+    <li><a href="cp.html">Corporate Partners</a></li>
+    <li><a href="li.html">Learning and Development</a></li>
+    <li><a href="testing.html">Testing</a></li>
+  </ul>  
+</body>
+<br><br><br><br><br>
+<footer> CopyRight © 2015 Dunkino Production. All Rights Reserved</footer>
+</html>

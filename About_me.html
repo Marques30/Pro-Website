@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>About Me</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script>
+function toggleCP(){
+var cp = document.getElementById("cp");
+cp.style.height = window.innerHeight - 60+"px";
+if(cp.style.right == "0px"){
+cp.style.right = "-260px";
+} else {
+cp.style.right = "0px";
+}
+}
+</script>
+</head>
+<body>
+  <header>
+  <div id="cpBtn" onclick="toggleCP()">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<div id="cp">
+<center><h2>Navigation</h2></center>
+  <ul>
+        <li><a href="Cover_Page.html">Cover Page</a></li>
+        <li><a href="Letter_of_Reference.html">Letter of Reference</a></li>
+        <li><a href="Resumes.html">Resumes</a></li>
+        <li><a href="Work_Samples.html">Work Samples</a></li>
+        <li><a href="index.html"><img src="images\monkey.gif"></a></li>
+        <li><a href="yu.html">Year Up</a></li>
+        <li><a href="qa.html">Quality Assurance</a></li>
+        <li><a href="cp.html">Corporate Partners</a></li>
+        <li><a href="li.html">Learning and Development</a></li>
+        <li><a href="testing.html">Testing</a></li>
+      </ul>
+  </div>    
+  <div class="tech">
+    <header>
+      <h1 id="welcome"></h1>
+      <input id="userInput" type="text" placeholder="enter name">
+      <input onclick="userName()" type="submit" value="Submit">
+      
+    </header>
+  </div>
+
+  </ul>
+</head>
+<body style="text-align:center;">
+ <p style="text-decoration:underline; color:red; font-size:25px;"><b>About Me</b></p>
+    <div style="float:left;" class="mark">
+   <p>Hello my name is Marques Butilla, at this point I can imagine your thinking what's actually in this website and who exactly am I? Well if you give me sometime I can at least give you an idea of who I am. To be honest I'm not all that special I don't have some perfect story from my childhood that grasps you in or that much of an interesting life. But I do have something that helps me stand out, and that is sense of wonder.</p> 
+
+<p>It complan me to move forward and seek new things in the world. In a way it's my most fundamental element about me, and thanks to it I've been able to go so far and continue to grow. It makes me feel that I have no limit at times and that work always has room for improvement, in a way you could call it my personal critic.</p>
+
+<p>There are times when it's been good have and times where it's been bad but it always pushes me. Thanks to this trait I've learned how to pick things up or understand things I recently learn within minutes. And it has also given me the ability to adapt to my situations and environment with ease. It is one of my most basic traits and it's also what makes me "me".</p>
+  </div>
+  <div style="float:right;" class="scan">
+  <img src="images\aku.png">
+  </div>
+</body>
+<script>
+  function userName() {
+      var name = document.getElementById("userInput").value;
+      document.getElementById("welcome").innerHTML ="Welcome " + name + ", to my profile";
+    }
+</script>
+<footer> ©2015 Dunkino Production. All Rights Reserved</footer>
+</html>

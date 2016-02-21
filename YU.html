@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href="style.css">
+<script type="text/javascript" src="action.js"></script>
+  <title>Year Up</title>
+    <ul class=icon>
+      <li><a href="https://yearup.org"><img src="images/YP.gif" style="width:150px"></a></li>
+      <li style="padding-left:750px;"><a href="https://www.facebook.com/yearup"><img src="images/SB.png" style="width:75px;"></a></li>
+      <li><a href="https://twitter.com/yearup"><img src="images/ti.png" style="width:75px"></a></li>
+      <li><a href="https://www.youtube.com/user/YearUpInc"><img src="images/yi.png" style="width:75px"></a></li>
+  </ul>
+  <span id="vName">
+  <script>readCookie('myCookie')</script>
+  </span>
+  <form name="frmLogin">
+  Please Log In:<br> <input type="text" name="fname" size="20" placeholder="Name">
+  <input type="email" name="email" placeholder="email address" /><br>
+  <input type="button" Value="Log in" onClick="createCookie('myCookie',frmLogin.fname.value)">
+  <input type="reset" value="Cancel" />
+  </form>
+  <script>
+function toggleCP(){
+var cp = document.getElementById("cp");
+cp.style.height = window.innerHeight - 60+"px";
+if(cp.style.right == "0px"){
+cp.style.right = "-260px";
+} else {
+cp.style.right = "0px";
+}
+}
+</script>
+</head>
+<body>
+  <header>
+  <div id="cpBtn" onclick="toggleCP()">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<div id="cp">
+<center><h2>Navigation</h2></center>
+  <ul>
+        <li><a href="Cover_Page.html">Cover Page</a></li>
+        <li><a href="Letter_of_Reference.html">Letter of Reference</a></li>
+        <li><a href="Resumes.html">Resumes</a></li>
+        <li><a href="Work_Samples.html">Work Samples</a></li>
+        <li><a href="index.html"><img src="images\monkey.gif"></a></li>
+        <li><a href="yu.html">Year Up</a></li>
+        <li><a href="qa.html">Quality Assurance</a></li>
+        <li><a href="cp.html">Corporate Partners</a></li>
+        <li><a href="li.html">Learning and Development</a></li>
+        <li><a href="testing.html">Testing</a></li>
+      </ul>
+  </div>    
+  <div class="tech">
+    <header>
+      <h1 id="welcome"></h1>
+      <input id="userInput" type="text" placeholder="enter name">
+      <input onclick="userName()" type="submit" value="Submit">
+      
+    </header>
+  </div>
+
+  </ul>
+</head>
+<h3>Year Up</h3>
+  <div style="float:left; text-align:left; width:450px; background: rgba(0, 0, 0, 0.5); border: solid; border-radius: 25px;">
+    <p> Year Up mission is to close the Opportunity Divide by providing urban young adults with the skills, experience, and support that will empower them to reach their potential through professional careers and higher education.
+
+    They achieve this mission through a high support, high expectation model that combines marketable job skills, stipends, internships and college credits. Our holistic approach focuses on students professional and personal development to place these young adults on a viable path to economic self-sufficiency. They follow these values:</p>
+    <li id="nom">Respect and value others</li>
+<li id="nom">Build trust, be honest</li>
+<li id="nom">Be accountable</li>
+<li id="nom">Engage and embrace diversity</li>
+<li id="nom">Strive to learn</li>
+<li id="nom">Work hard and have fun</li>
+<br>
+<p>For more information please email: <a href="sfbayadmissions@yearup.org">sfbayadmissions@yearup.org</a></p>
+  </div>
+  <div style="float:right; text-align:left; width:450px; background: rgba(0, 0, 0, 0.5); border: solid; border-radius: 25px;">
+  <img src="images/PO.jpg" style="width:350px; margin-left:50px;">
+  <p> Their approach is to focuses on students' professional and personal development to help them achieve economic self-sufficiency.
+
+For the first six months of the program, students develop technical and professional skills in the classroom. Students then apply those skills during the second six months on an internship at one of Year Up’s corporate partners. Students earn college credits and a weekly stipend, and are supported by staff advisors, professional mentors, dedicated social services staff, and a powerful network of community-based partners.</p>
+  </div>
+  <br><br><br><br>
+<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
+<br><br><br><br>
+  <ul class="nav">
+   <li><a href="yu.html">Year Up</a></li>
+    <li><a href="qa.html">Quality Assurance</a></li>
+    <li><a href="cp.html">Corporate Partners</a></li>
+    <li><a href="li.html">Learning and Development</a></li>
+    <li><a href="testing.html">Testing</a></li>
+  </ul>
+</body>
+<br><br><br><br>
+
+
+<footer> CopyRight © 2015 Dunkino Production. All Rights Reserved</footer>
+</html>

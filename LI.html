@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="action.js"></script>
+  <title>L&D vs Internship</title>
+  <ul class=icon>
+      <li><a href="https://yearup.org"><img src="images/YP.gif" style="width:150px"></a></li>
+      <li style="padding-left:750px;"><a href="https://www.facebook.com/yearup"><img src="images/SB.png" style="width:75px;"></a></li>
+      <li><a href="https://twitter.com/yearup"><img src="images/ti.png" style="width:75px"></a></li>
+      <li><a href="https://www.youtube.com/user/YearUpInc"><img src="images/yi.png" style="width:75px"></a></li>
+  </ul>
+  <span id="vName">
+  <script>readCookie('myCookie')</script>
+  </span>
+  <form name="frmLogin">
+  Please Log In:<br> <input type="text" name="fname" size="20" placeholder="Name">
+  <input type="email" name="email" placeholder="email address" /><br>
+  <input type="button" Value="Log in" onClick="createCookie('myCookie',frmLogin.fname.value)">
+  <input type="reset" value="Cancel" />
+  <script>
+function toggleCP(){
+var cp = document.getElementById("cp");
+cp.style.height = window.innerHeight - 60+"px";
+if(cp.style.right == "0px"){
+cp.style.right = "-260px";
+} else {
+cp.style.right = "0px";
+}
+}
+</script>
+</head>
+<body>
+  <header>
+  <div id="cpBtn" onclick="toggleCP()">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<div id="cp">
+<center><h2>Navigation</h2></center>
+  <ul>
+        <li><a href="Cover_Page.html">Cover Page</a></li>
+        <li><a href="Letter_of_Reference.html">Letter of Reference</a></li>
+        <li><a href="Resumes.html">Resumes</a></li>
+        <li><a href="Work_Samples.html">Work Samples</a></li>
+        <li><a href="index.html"><img src="images\monkey.gif"></a></li>
+        <li><a href="yu.html">Year Up</a></li>
+        <li><a href="qa.html">Quality Assurance</a></li>
+        <li><a href="cp.html">Corporate Partners</a></li>
+        <li><a href="li.html">Learning and Development</a></li>
+        <li><a href="testing.html">Testing</a></li>
+      </ul>
+  </div>    
+  <div class="tech">
+    <header>
+      <h1 id="welcome"></h1>
+      <input id="userInput" type="text" placeholder="enter name">
+      <input onclick="userName()" type="submit" value="Submit">
+      
+    </header>
+  </div>
+
+  </ul>
+</head>
+  </form>
+  <div style="float:left; text-align:left; width:450px; background: rgba(0, 0, 0, 0.5); border: solid; border-radius: 25px;">
+  <h3>Learning & Development</h3>
+    <p> The learning and development phase at year up feels like some kind of boot camp for business and technical training. During this phase you will learn how to act in corporate world as well as learn skills that are highly needed in the work place. Skills such as technology foundation to build and upgrade computers, public speaking, networking, help desk, coding with HTML and CSS, and creating servers. Each of this skills are taught within a 14 week period, and then your track between project coordinator, system admin, quality assurance, and cyber security are decided. And from there you spend a final 7 weeks having everything about your track crammed into you before internship.</p>
+  </div>
+  <div style="float:right; text-align:left; width:450px; background: rgba(0, 0, 0, 0.5); border: solid; border-radius: 25px;">
+  <h3>Internship</h3>
+  <p> During internship you demonstrate what you have learned during the learning and development phase at year up. At this point you are put into a corporate setting working as you would if you were already hired and using skills you learned at year up. And if you are able to show just how valuable you are during internship, when the 6 months are over you may even be hired that company as full time. </p>
+  </div>
+  <img src="images/ip.jpg" style="padding-left:25px;">
+  <ul class="nav">
+   <li><a href="yu.html">Year Up</a></li>
+    <li><a href="qa.html">Quality Assurance</a></li>
+    <li><a href="cp.html">Corporate Partners</a></li>
+    <li><a href="li.html">Learning and Development</a></li>
+    <li><a href="testing.html">Testing</a></li>
+  </ul>
+</body>
+<br><br><br><br><br>
+<footer> CopyRight © 2015 Dunkino Production. All Rights Reserved</footer>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Cover Page</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script>
+function toggleCP(){
+var cp = document.getElementById("cp");
+cp.style.height = window.innerHeight - 60+"px";
+if(cp.style.right == "0px"){
+cp.style.right = "-260px";
+} else {
+cp.style.right = "0px";
+}
+}
+</script>
+</head>
+<body>
+  <header>
+  <div id="cpBtn" onclick="toggleCP()">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<div id="cp">
+<center><h2>Navigation</h2></center>
+  <ul>
+        <li><a href="Cover_Page.html">Cover Page</a></li>
+        <li><a href="Letter_of_Reference.html">Letter of Reference</a></li>
+        <li><a href="Resumes.html">Resumes</a></li>
+        <li><a href="Work_Samples.html">Work Samples</a></li>
+        <li><a href="index.html"><img src="images\monkey.gif"></a></li>
+        <li><a href="yu.html">Year Up</a></li>
+        <li><a href="qa.html">Quality Assurance</a></li>
+        <li><a href="cp.html">Corporate Partners</a></li>
+        <li><a href="li.html">Learning and Development</a></li>
+        <li><a href="testing.html">Testing</a></li>
+      </ul>
+  </div>    
+  <div class="tech">
+    <header>
+      <h1 id="welcome"></h1>
+      <input id="userInput" type="text" placeholder="enter name">
+      <input onclick="userName()" type="submit" value="Submit">
+      
+    </header>
+  </div>
+
+  </ul>
+</head>
+<p></p>
+  <div style="width: 50%; height:250px; padding-top:150px; float:right;" class="scan">
+    <p><a href="https://www.linkedin.com/in/marques-butilla-676639105"><img src="images\mar.jpg"></a>
+</p>
+</div>
+  <div style="float:left; height:475px;" class="mark">
+    <p>The reason on why I am writing this is to show my interest within the track of quality assurance because the idea of new software and technology has always fascinated me. It is something that I have always had interest in, even though I realize what is required of me I will see it through no matter what.<br><br>
+I know that being a QA trainee requires paying close attention to detail, training others to use programs as well as hardware, and working with a team to solve major errors. Right now I am currently taking extra classes that teach web development where the slightest mistake and destroy an entire page. Through that I am able to learn just how important details are and how effective it is to look for errors within codes. When it comes to training others I have taught my fellow colleagues how to create websites and the basics of excel to where they can complete similar tasks on their own. I have been in several groups working to complete projects by certain deadlines, and have managed to succeed with all my projects. With all these skills I feel that I would be the perfect fit for this position, also because I feel that I have more than enough potential to undertake this track.<br><br>
+I would like to thank you for taking the time to read my letter and look forward to hearing back from you. The best way to contact me is through email: mbutilla@sfo.yearup.org.<br><br>
+
+Best Regards,<br><br>
+
+Marques Butilla
+</p>
+  </div>
+</body>
+<script>
+  function userName() {
+      var name = document.getElementById("userInput").value;
+      document.getElementById("welcome").innerHTML ="Welcome " + name + ", to my profile";
+      color: red; 
+    }
+</script>
+<footer> ©2015 Dunkino Production. All Rights Reserved</footer>
+
+</html>

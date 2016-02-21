@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="action.js"></script>
+  <title>Corporate Partners</title>
+   <ul class=icon>
+      <li><a href="https://yearup.org"><img src="images/YP.gif" style="width:150px"></a></li>
+      <li style="padding-left:750px;"><a href="https://www.facebook.com/yearup"><img src="images/SB.png" style="width:75px;"></a></li>
+      <li><a href="https://twitter.com/yearup"><img src="images/ti.png" style="width:75px"></a></li>
+      <li><a href="https://www.youtube.com/user/YearUpInc"><img src="images/yi.png" style="width:75px"></a></li>
+  </ul>
+  <span id="vName">
+  <script>readCookie('myCookie')</script>
+  </span>
+  <form name="frmLogin">
+  Please Log In:<br> <input type="text" name="fname" size="20" placeholder="Name">
+  <input type="email" name="email" placeholder="email address" /><br>
+  <input type="button" Value="Log in" onClick="createCookie('myCookie',frmLogin.fname.value)">
+  <input type="reset" value="Cancel" />
+  </form>
+  <script>
+function toggleCP(){
+var cp = document.getElementById("cp");
+cp.style.height = window.innerHeight - 60+"px";
+if(cp.style.right == "0px"){
+cp.style.right = "-260px";
+} else {
+cp.style.right = "0px";
+}
+}
+</script>
+</head>
+<body>
+  <header>
+  <div id="cpBtn" onclick="toggleCP()">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<div id="cp">
+<center><h2>Navigation</h2></center>
+  <ul>
+        <li><a href="Cover_Page.html">Cover Page</a></li>
+        <li><a href="Letter_of_Reference.html">Letter of Reference</a></li>
+        <li><a href="Resumes.html">Resumes</a></li>
+        <li><a href="Work_Samples.html">Work Samples</a></li>
+        <li><a href="index.html"><img src="images\monkey.gif"></a></li>
+        <li><a href="yu.html">Year Up</a></li>
+        <li><a href="qa.html">Quality Assurance</a></li>
+        <li><a href="cp.html">Corporate Partners</a></li>
+        <li><a href="li.html">Learning and Development</a></li>
+        <li><a href="testing.html">Testing</a></li>
+      </ul>
+  </div>    
+  <div class="tech">
+    <header>
+      <h1 id="welcome"></h1>
+      <input id="userInput" type="text" placeholder="enter name">
+      <input onclick="userName()" type="submit" value="Submit">
+      
+    </header>
+  </div>
+
+  </ul>
+</head>
+
+  <div>
+    <h3>Corporate Partners</h3>
+    <table border="1" style="width:650px; text-align:center; margin-left: 300px;  background: rgba(0, 0, 0, 0.5); border-radius: 25px;">
+  <tr>
+    <td>GE</td>
+    <td><img src="images/ge.png" style="max-width:75px;"></td>
+    <td>Paypal</td>
+    <td><img src="images/pp.png" style="max-width:75px;"></td>
+  </tr>
+  <tr>
+    <td>Gap Inc.</td>
+    <td><img src="images/gap.jpg" style="max-width:75px;"></td>
+    <td>City and County of San Francisco</td>
+    <td><img src="images/cs.gif" style="max-width:75px;"></td>
+  </tr>
+  <tr>
+    <td>Bank of The West</td>
+    <td><img src="images/bw.png" style="max-width:75px;"></td>
+    <td>SalesForce</td>
+    <td><img src="images/sf.png" style="max-width:75px;"></td>
+  </tr>
+  <tr> 
+    <td>Splunk</td>
+    <td><img src="images/sl.png" style="max-width:75px;"></td>
+    <td>UCSF</td>
+    <td><img src="images/ucsf.gif" style="max-width:75px;"></td>
+  </tr>
+  <tr>
+    <td>Workday</td>
+    <td><img src="images/workday.png" style="max-width:75px;"></td>
+    <td>Macys.com</td>
+    <td><img src="images/Macy.jpg" style="max-width:75px;"></td>
+  </tr>
+</table>
+</div>
+  <ul class="nav">
+   <li><a href="yu.html">Year Up</a></li>
+    <li><a href="qa.html">Quality Assurance</a></li>
+    <li><a href="cp.html">Corporate Partners</a></li>
+    <li><a href="li.html">Learning and Development</a></li>
+    <li><a href="testing.html">Testing</a></li>
+  </ul>
+</body>
+<br><br><br><br><br><br><br>
+<footer> CopyRight © 2015 Dunkino Production. All Rights Reserved</footer>
+</html>

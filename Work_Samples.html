@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Work</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script>
+function toggleCP(){
+var cp = document.getElementById("cp");
+cp.style.height = window.innerHeight - 60+"px";
+if(cp.style.right == "0px"){
+cp.style.right = "-260px";
+} else {
+cp.style.right = "0px";
+}
+}
+</script>
+</head>
+<body>
+  <header>
+  <div id="cpBtn" onclick="toggleCP()">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<div id="cp">
+<center><h2>Navigation</h2></center>
+  <ul>
+        <li><a href="Cover_Page.html">Cover Page</a></li>
+        <li><a href="Letter_of_Reference.html">Letter of Reference</a></li>
+        <li><a href="Resumes.html">Resumes</a></li>
+        <li><a href="Work_Samples.html">Work Samples</a></li>
+        <li><a href="index.html"><img src="images\monkey.gif"></a></li>
+        <li><a href="yu.html">Year Up</a></li>
+        <li><a href="qa.html">Quality Assurance</a></li>
+        <li><a href="cp.html">Corporate Partners</a></li>
+        <li><a href="li.html">Learning and Development</a></li>
+        <li><a href="testing.html">Testing</a></li>
+      </ul>
+  </div>    
+  <div class="tech">
+    <header>
+      <h1 id="welcome"></h1>
+      <input id="userInput" type="text" placeholder="enter name">
+      <input onclick="userName()" type="submit" value="Submit">
+      
+    </header>
+  </div>
+
+  </ul>
+</head>
+  <div style="width: 50%; height:300px; background-color: green; float:left;">
+  <h2 style="color:red;">Network Diagram</h2>
+    <p><img src="images\Network Diagram.jpg" width="250px" height="200px"></p>
+  </div>
+  <div style="width: 50%; height:575px; background-color: green; float:right;">
+  <h2><a href="Critical Thinking.pdf">Critical Thinking</a></h2>
+  <object width="400px" height="500px" type="application/pdf" data="Critical Thinking.pdf"></object>
+    <style="width:400px; height:250px; padding-top:10px;">
+  </div>
+  <div style="width: 50%; height:350px; background-color: green; float:right;">
+  <h2 style="color:red;"><a href="K&K plumbing.xlsx">Excel Worksheet</h2>
+    <img src="images\Capture.jpg" style="width:400px; height:250px; padding-top:10px;">
+  </div>
+</body>
+<script>
+  function userName() {
+      var name = document.getElementById("userInput").value;
+      document.getElementById("welcome").innerHTML ="Welcome " + name + ", to my Works Samples page";
+    }
+</script>
+<footer> ©2015 Dunkino Production. All Rights Reserved</footer>
+
+</html>
